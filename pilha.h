@@ -11,8 +11,9 @@ typedef int TipoItem;
 class stack{
     // declarando as variáveis privadas da classe
     private:
-    int syze; // para armazenar o tamanho da pilha
+    int size; // para armazenar o tamanho da pilha
     TipoItem* struture;
+    const int max_itens = 100; // para definir o tamanho máximo da pilha
 
 
 
@@ -25,5 +26,5 @@ class stack{
     void push(TipoItem item); // função para inserir um item na pilha
     TipoItem pop(); // função para remover um item da pilha
     void print(); // função para imprimir os itens da pilha 
-    int getsize(); // função para obter o tamanho da pilha
+    int 
 };

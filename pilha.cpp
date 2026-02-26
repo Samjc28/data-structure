@@ -24,19 +24,34 @@ using namespace std;
     }
 
     void stack::push(TipoItem item){
-        
+        if(isfull()){
+            cout << "A pilha está cheia. Não é possível inserir o item." << endl;
+        } else{
+            struture [size] = item;
+            size++;
+        }
         
     }
 
     TipoItem stack::pop(){
-
+        if(isempty()){
+            cout << " A pilha está vazia. não há itens para remover." << endl;
+            return -1; // retornando um valor inválido para indicar que a pilha está vazia
+        } else{
+            size--;
+            return struture[size];
+        }
     }
 
         void stack::print(){
-
+            cout << "Itens na pilha: [";
+            for(int i = size - 1; i >= 0; i--){
+                cout << struture[i] << " ";
+            }
+            cout << "]" << endl;
         }
 
     int stack::getsize(){
-
+        return size;
     }
 

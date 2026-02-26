@@ -26,5 +26,5 @@ class stack{
     void push(TipoItem item); // função para inserir um item na pilha
     TipoItem pop(); // função para remover um item da pilha
     void print(); // função para imprimir os itens da pilha 
-    int 
+    int stack::getsize(); // função para obter o tamanho atual da pilha
 };

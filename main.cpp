@@ -22,17 +22,19 @@ int main() {
         cout << "Digite 4 para obter o tamanho atual da pilha." << endl;
         cin >> option; // lendo a opção escolhida pelo usuário
     switch (option)
-        {    case 1:
+        {   case 1:
             cout << "Digite o item a ser inserido na pilha: ";
             cin >> item; // lendo o item a ser inserido na pilha
             pilha1.push(item); // chamando a função push para inserir o item na pilha
             break;
-             case 2:
-            item = pilha1.pop(); // chamando a função pop para remover um item da pilha e 
+             
+            case 2:
+            item = pilha1.pop(); // chamando a função pop para remover um item da pilha 
+            if (item != -1) // verificando se o item removido é válido (não é -1, que indica que a pilha está vazia)
             cout << "Item removido: " << item << endl;
             break;
 
-             case 3:
+            case 3:
             pilha1.print(); // chamando a função print para imprimir os itens da pilha
             break;
 
